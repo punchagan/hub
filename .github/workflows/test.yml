@@ -14,6 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Show env vars
+        run: env
+
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
